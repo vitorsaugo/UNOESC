@@ -38,5 +38,5 @@ Este repositório é uma forma de acompanhar e registrar essa trajetória, reuni
 
 ## Autor
 
-**[Seu Nome]**  
+**[VITOR AUGUSTO]**  
 Estudante da UNOESC
