@@ -1,0 +1,336 @@
+/* ===================================================================
+   ConectaTech — folha de estilos própria
+   Paleta: navy profundo + teal de sinal + âmbar de destaque
+   Tipografia: Sora (títulos, geométrica/técnica) + Inter (texto)
+=================================================================== */
+
+:root {
+  --ct-navy: #276139;
+  --ct-navy-2: #123049;
+  --ct-teal: #50ca7f;
+  --ct-teal-dark: #3ad186;
+  --ct-amber: #178C7E;
+  --ct-bg: #F6F8F9;
+  --ct-ink: #12202C;
+  --ct-muted: #5B7180;
+  --ct-line: #DDE6E9;
+  --ct-radius: 10px;
+}
+
+* { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ct-ink);
+  background-color: var(--ct-bg);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .ct-brand, .navbar-brand {
+  font-family: 'Sora', system-ui, sans-serif;
+}
+
+a { color: var(--ct-teal-dark); }
+a:hover { color: var(--ct-teal); }
+
+.ct-container-narrow {
+  max-width: 720px;
+}
+
+/* ---------- Navbar ---------- */
+.ct-navbar {
+  background-color: var(--ct-navy);
+  padding-top: .85rem;
+  padding-bottom: .85rem;
+}
+
+.ct-navbar .navbar-brand {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .2px;
+  font-size: 1.25rem;
+}
+
+.ct-navbar .navbar-brand span { color: var(--ct-teal); }
+
+.ct-navbar .nav-link {
+  color: rgba(255,255,255,.82);
+  font-weight: 500;
+  margin-left: .35rem;
+}
+
+.ct-navbar .nav-link:hover,
+.ct-navbar .nav-link:focus {
+  color: #fff;
+}
+
+.ct-navbar .btn-whats {
+  background-color: var(--ct-teal);
+  color:#143f22;
+  font-weight: 600;
+  border: none;
+}
+
+.ct-navbar .btn-whats:hover {
+  background-color: var(--ct-amber);
+  color:#3ad186;
+}
+
+
+/* ---------- Carousel ---------- */
+.ct-carousel .carousel-item {
+  height: 62vh;
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.ct-carousel .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(14,34,51,.92) 0%, rgba(14,34,51,.55) 55%, rgba(14,34,51,.25) 100%);
+}
+
+.ct-carousel .carousel-caption {
+  text-align: left;
+  left: 6%;
+  right: auto;
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 560px;
+  z-index: 2;
+}
+
+.ct-carousel .carousel-caption .ct-eyebrow {
+  color: var(--ct-teal);
+  font-weight: 700;
+  font-size: .85rem;
+  margin-bottom: .5rem;
+}
+
+.ct-carousel .carousel-caption h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: .8rem;
+}
+
+.ct-carousel .carousel-caption p {
+  color: rgba(255,255,255,.85);
+  font-size: 1.05rem;
+  margin-bottom: 1.3rem;
+}
+
+/* ---------- Sections ---------- */
+.ct-section { padding: 5rem 0; }
+.ct-section-alt { background-color: #fff; }
+
+.ct-kicker {
+  color: var(--ct-teal-dark);
+  font-weight: 700;
+  font-size: .9rem;
+  margin-bottom: .4rem;
+}
+
+.ct-section h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: .6rem;
+}
+
+.ct-section .ct-lead {
+  color: var(--ct-muted);
+  max-width: 620px;
+}
+
+/* ---------- Serviços ---------- */
+.ct-service-card {
+  border: 1px solid var(--ct-line);
+  border-radius: var(--ct-radius);
+  overflow: hidden;
+  background: #fff;
+  height: 100%;
+}
+
+.ct-service-card img { height: 210px; object-fit: cover; width: 100%; }
+
+.ct-service-card .card-body { padding: 1.5rem; }
+
+.ct-service-card .ct-price {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ct-navy);
+}
+
+.ct-service-card .ct-price small {
+  font-size: .95rem;
+  font-weight: 500;
+  color: var(--ct-muted);
+}
+
+.btn-ct-primary {
+  background-color: var(--ct-navy);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: .55rem 1.2rem;
+}
+
+.btn-ct-primary:hover { background-color: var(--ct-teal-dark); color: #fff; }
+
+.btn-ct-outline {
+  border: 1.5px solid var(--ct-navy);
+  color: var(--ct-navy);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn-ct-outline:hover { background-color: var(--ct-navy); color: #fff; }
+
+/* ---------- Pricing table ---------- */
+.ct-table thead { background-color: var(--ct-navy); color: #fff; }
+.ct-table td, .ct-table th { vertical-align: middle; }
+
+/* ---------- About ---------- */
+.ct-about-list li {
+  display: flex;
+  gap: .7rem;
+  margin-bottom: .7rem;
+  color: var(--ct-muted);
+}
+
+.ct-about-list i { color: var(--ct-teal-dark); margin-top: .2rem; }
+
+.ct-map iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  border-radius: var(--ct-radius);
+}
+
+/* ---------- Testimonials ---------- */
+.ct-testimonial {
+  background: #fff;
+  border: 1px solid var(--ct-line);
+  border-radius: var(--ct-radius);
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.ct-testimonial .stars { color: var(--ct-amber); font-size: .85rem; margin-bottom: .6rem; }
+
+.ct-testimonial img {
+  width: 46px; height: 46px; border-radius: 50%; object-fit: cover;
+}
+
+.ct-testimonial p.ct-quote {
+  color: var(--ct-ink);
+  font-size: .95rem;
+  min-height: 90px;
+}
+
+.ct-testimonial .ct-name { font-weight: 700; font-size: .92rem; }
+.ct-testimonial .ct-role { color: var(--ct-muted); font-size: .8rem; }
+
+/* ---------- Contact ---------- */
+.ct-contact-info li {
+  display: flex;
+  gap: .7rem;
+  margin-bottom: .9rem;
+}
+
+.ct-contact-info i {
+  color: var(--ct-teal);
+  background: var(--ct-navy);
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.ct-social a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ct-line);
+  color: var(--ct-navy);
+  margin-right: .5rem;
+}
+
+.ct-social a:hover { background-color: var(--ct-navy); color: #fff; border-color: var(--ct-navy); }
+
+.ct-accordion .accordion-button:not(.collapsed) {
+  background-color: rgba(33,184,166,.1);
+  color: var(--ct-navy);
+}
+
+.ct-accordion .accordion-button:focus { box-shadow: none; }
+
+/* ---------- Footer ---------- */
+.ct-footer {
+  background-color: var(--ct-navy);
+  color: rgba(255,255,255,.75);
+  padding: 3rem 0 1.5rem;
+}
+
+.ct-footer h6 { color: #fff; font-weight: 700; margin-bottom: 1rem; }
+.ct-footer a { color: rgba(255,255,255,.7); text-decoration: none; }
+.ct-footer a:hover { color: var(--ct-teal); }
+.ct-footer hr { border-color: rgba(255,255,255,.12); margin: 2rem 0 1.2rem; }
+.ct-footer .ct-dev { font-size: .88rem; color: rgba(255,255,255,.55); }
+
+/* ---------- WhatsApp float button ---------- */
+.ct-whats-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.6rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  z-index: 1050;
+}
+
+.ct-whats-float:hover { color: #fff; transform: translateY(-2px); }
+
+/* ---------- Service detail pages ---------- */
+.ct-service-hero {
+  background-color: var(--ct-navy);
+  color: #fff;
+  padding: 3rem 0 2.2rem;
+}
+
+.ct-service-hero .breadcrumb { --bs-breadcrumb-divider-color: rgba(255,255,255,.5); }
+.ct-service-hero .breadcrumb a { color: rgba(255,255,255,.7); }
+.ct-service-hero .breadcrumb-item.active { color: rgba(255,255,255,.9); }
+
+.ct-detail-photos img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: var(--ct-radius);
+}
+
+.ct-info-table th { width: 45%; color: var(--ct-muted); font-weight: 600; background-color: #fafcfc; }
+
+.ratio-video {
+  border-radius: var(--ct-radius);
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .ct-carousel .carousel-item { height: 72vh; }
+  .ct-carousel .carousel-caption h2 { font-size: 1.7rem; }
+  .ct-section { padding: 3.2rem 0; }
+}

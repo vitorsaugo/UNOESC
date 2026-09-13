@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADESTRAÊ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark ct-navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html#inicio"></span>ADESTRAÊ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ctNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="ctNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#depoimentos">Depoimentos</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-whats btn-sm px-3" target="_blank" rel="noopener"
+             href="https://wa.me/5549999112233?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento">
+             <i class="bi bi-whatsapp me-1"></i>Fale conosco
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CARROSSEL -->
+<header id="inicio">
+  <div id="ctCarousel" class="carousel slide ct-carousel" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#ctCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#ctCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#ctCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image:url('imagens/01-promo.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <div class="ct-eyebrow">PROMOÇÃO DO MÊS</div>
+            <h2>Primeira avaliação gratuita</h2>
+            <p>Agende uma visita para avaliação do pet</p>
+            <a href="servico1.html" class="btn btn-ct-primary btn-lg">Quero esse desconto</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:url('imagens/layout2.jpeg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <div class="ct-eyebrow">TREINAMENTO</div>
+            <h2>Transforme a convivência com seu cão</h2>
+            <p>Treinamento comportamental para cães de todas as idades, com métodos positivos e resultados duradouros.</p>
+            <a href="servico2.html" class="btn btn-ct-primary btn-lg">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:url('imagens/01-dog.jpeg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <div class="ct-eyebrow">ADESTRAMENTO</div>
+            <h2>Cão calmo, dono tranquilo</h2>
+            <p>Aulas individuais ou em grupo, no seu ambiente ou no nosso espaço preparado.</p>
+            <a href="servico3.html" class="btn btn-ct-primary btn-lg">Agendar manutenção</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#ctCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ctCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</header>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="ct-section">
+  <div class="container">
+    <div class="ct-kicker">CATÁLOGO</div>
+    <h2>Nossos serviços</h2>
+    <p class="ct-lead mb-5">A Adestraê oferece serviços de adestramento de animais com o objetivo de melhorar ocomportamento, a comunicação e a convivência entre os animais e seus tutores. Os treinamentos são adaptados de acordo com as características e necessidades de cada animal, utilizando técnicas de aprendizagem, reforço positivo e socialização.
+                        </p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="ct-service-card">
+          <img src="imagens/Imagem4 (1).jpg" alt="treinamento de cachorro">
+          <div class="card-body">
+            <h3 class="h5">ADESTRAMENTO BÁSICO</h3>
+            <p class="text-muted small">O adestramento básico trabalha comandos e comportamentos essenciais para o dia a dia. O treinamento ajuda o animal a desenvolver obediência, atenção e disciplina, facilitando acomunicação com seu tutor.</p>
+            <div class="ct-price mb-3">R$ 320,00 <small>/ mês</small></div>
+            <a href="servico1.html" class="btn btn-ct-primary w-100">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ct-service-card">
+          <img src="imagens/01-Imagem9.jpg" alt="Correção comportamento">
+          <div class="card-body">
+            <h3 class="h5">CORREÇÃO DE COMPORTAMENTO</h3>
+            <p class="text-muted small">Esse serviço é destinado a animais que apresentam comportamentos indesejados, como agressividade, medo, ansiedade, desobediência ou dificuldade de convivência. O treinamento busca identificar as causas do comportamento e trabalhar sua melhoria de forma gradual e responsável.</p>
+            <div class="ct-price mb-3">R$ 249,00 <small>/ mês</small></div>
+            <a href="servico2.html" class="btn btn-ct-primary w-100">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ct-service-card">
+          <img src="imagens/01-Imagem5.jpg" alt="Socialização">
+          <div class="card-body">
+            <h3 class="h5">SOCIALIZAÇÃO ANIMAL</h3>
+            <p class="text-muted small">A socialização ajuda o animal a desenvolver uma convivência mais tranquila com pessoas, outros animais e diferentes ambientes. O processo é realizado de maneira gradual, respeitando os limites e as características de cada animal.</p>
+            <div class="ct-price mb-3">R$ 200,00 <small>/ mês</small></div>
+            <a href="servico3.html" class="btn btn-ct-primary w-100">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREÇOS -->
+    <div class="table-responsive mt-5">
+      <table class="table ct-table align-middle">
+        <thead>
+          <tr>
+            <th>Serviço</th>
+            <th>Preço a partir de</th>
+            <th>Tempo médio do serviço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Adestramento basico</td>
+            <td>R$ 320,00 / mês</td>
+            <td>1 ano</td>
+          </tr>
+          <tr>
+            <td>Correção de comportamento</td>
+            <td>R$ 249,00 / mês</td>
+            <td>8 meses</td>
+          </tr>
+          <tr>
+            <td>Socialização animal</td>
+            <td>R$ 200,00 / mês</td>
+            <td>2 meses</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="ct-section ct-section-alt">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <div class="ct-kicker">QUEM SOMOS</div>
+        <h2>SOBRE A EMPRESA</h2>
+        <p class="text-muted">A Adestraê foi fundada com o objetivo de ajudar tutores a melhorar a convivência com seus animais por meio do adestramento. A empresa surgiu a partir da paixão por animais e da necessidade de oferecer um treinamento que fosse eficiente, responsável e baseado no respeito.</p>
+        <p class="text-muted">Desde o início, a Adestraê busca oferecer um atendimento personalizado, considerando as características e necessidades de cada animal. A empresa trabalha para fortalecer a relação entre os animais e seus tutores, tornando a convivência mais tranquila e proporcionando maior bemestar para ambos.</p>
+        <p class="text-muted">Oferecer serviços de adestramento de qualidade, promovendo o aprendizado e o bem-estar dos animais por meio de métodos responsáveis, respeitosos e personalizados, fortalecendo a relação entre os animais e seus tutores.</p>
+
+        <ul class="list-unstyled ct-about-list mt-4">
+          <li><i class="bi bi-geo-alt-fill"></i> <span>Rua das Araucárias, 245</span></li>
+          <li><i class="bi bi-mailbox-flag"></i> <span>CEP 80620-180 — Água Verde, Curitiba – PR</span></li>
+          <li><i class="bi bi-clock-fill"></i> <span>Atendimento de segunda a sábado, das 8h às 19h</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="ct-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1887.4774187269325!2d-49.28646958936481!3d-25.454537708372534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1spt-BR!2sbr!4v1789045581484!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Localização da ConectaTech no Google Maps"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="ct-section">
+  <div class="container">
+    <div class="ct-kicker">CLIENTES</div>
+    <h2>DEPOIMENTOS</h2>
+    <p class="ct-lead mb-5">Depoimentos reais de quem já contratou nossos serviços.</p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="ct-testimonial">
+          <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="ct-quote">Meu cachorro tinha muita dificuldade para obedecer aos comandos e se comportava mal durante os passeios. Depois do treinamento realizado pela Adestraê, tivemos uma grande melhora no comportamento e hoje conseguimos passear com muito mais tranquilidade.</p>
+          <div class="d-flex align-items-center gap-2 mt-3">
+            <div><div class="ct-name">Gabriel Martins</div><div class="ct-role">Data: 12 de março de 2026</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="ct-testimonial">
+          <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="ct-quote">A equipe da Adestraê foi muito atenciosa durante todo o treinamento. Aprendemos a lidar melhor com o comportamento do nosso animal e percebemos uma evolução muito grande depois das aulas.</p>
+          <div class="d-flex align-items-center gap-2 mt-3">
+            <div><div class="ct-name">Beatriz Oliveira</div><div class="ct-role">Data: 28 de abril de 2026</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="ct-testimonial">
+          <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+          <p class="ct-quote">Gostei muito do trabalho realizado pela Adestraê. O treinamento foi feito com paciência e  respeito, e nosso animal ficou muito mais tranquilo e obediente. Recomendo o serviço para outros tutores.</p>
+          <div class="d-flex align-items-center gap-2 mt-3">
+            <div><div class="ct-name">Rafael Souza</div><div class="ct-role">Data: 16 de junho de 2026</div></div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="ct-section ct-section-alt">
+  <div class="container">
+    <div class="ct-kicker">FALE CONOSCO</div>
+    <h2>Contato e orçamentos</h2>
+    <p class="ct-lead mb-5">Preencha o formulário ou fale diretamente pelos nossos canais de atendimento.</p>
+
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <form onsubmit="event.preventDefault(); alert('Mensagem enviada! Em breve entraremos em contato.'); this.reset();">
+          <div class="mb-3">
+            <label for="contatoNome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="contatoNome" placeholder="Seu nome completo" required>
+          </div>
+          <div class="mb-3">
+            <label for="contatoMensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="contatoMensagem" rows="4" placeholder="Conte um pouco sobre o que você precisa" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-ct-primary px-4">Enviar</button>
+        </form>
+      </div>
+
+      <div class="col-lg-3">
+        <h6 class="fw-bold mb-3">ADESTRAÊ</h6>
+        <ul class="list-unstyled ct-contact-info">
+          <li><i class="bi bi-whatsapp"></i><span>(49) 99911-2233</span></li>
+          <li><i class="bi bi-geo-alt-fill"></i><span>Rua das Araucárias, 245 — Água Verde, Curitiba – PR</span></li>
+        </ul>
+        <div class="ct-social mt-3">
+          <a href="https://wa.me/5549999112233" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://github.com/vitorsaugo" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <h6 class="fw-bold mb-3">Perguntas frequentes</h6>
+        <div class="accordion ct-accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                Quais formas de pagamento?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body small">Aceitamos Pix, cartão de débito/crédito e dinheiro.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Atendem toda a cidade?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body small">Atendemos Parana e cidades vizinhas em um raio de até 40 km.</div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer class="ct-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6>Links rápidos</h6>
+        <p class="small mb-1"><a href="index.html#servicos">Serviços</a></p>
+        <p class="small mb-1"><a href="index.html#sobre">Sobre a empresa</a></p>
+        <p class="small mb-1"><a href="index.html#depoimentos">Depoimentos</a></p>
+        <p class="small mb-1"><a href="index.html#contato">Contato</a></p>
+      </div>
+      <div class="col-md-4">
+        <h6>Atendimento</h6>
+        <p class="small mb-1"><i class="bi bi-whatsapp me-2"></i>(49) 99911-2233</p>
+      </div>
+    </div>
+    <hr>
+    <div class="d-flex flex-column flex-md-row justify-content-between ct-dev">
+      <span>Desenvolvido por Vitor Augusto</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Botão WhatsApp -->
+<a class="ct-whats-float" target="_blank" rel="noopener"
+   href="https://wa.me/5549999112233?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
+   aria-label="Conversar no WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

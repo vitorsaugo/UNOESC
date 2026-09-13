@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Socialização Animal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark ct-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html#inicio">ADESTRAê</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ctNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="ctNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#depoimentos">Depoimentos</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-whats btn-sm px-3" target="_blank" rel="noopener"
+             href="https://wa.me/5549999112233?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20manuten%C3%A7%C3%A3o%20de%20computador">
+             <i class="bi bi-whatsapp me-1"></i>Fale conosco
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SERVIÇO -->
+<div class="ct-service-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+        <li class="breadcrumb-item"><a href="index.html#servicos">Serviços</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Socialização Animal</li>
+      </ol>
+    </nav>
+    <h1 class="h2 fw-bold mb-2">Socialização Animal</h1>
+    <p class="mb-0" style="color:rgba(255,255,255,.75)">ajude o animal a desenvolver uma convivência mais tranquila com pessoas, outros animais e diferentes ambientes.</p>
+  </div>
+</div>
+
+<!-- DETALHES DO SERVIÇO -->
+<section class="ct-section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+
+        <!-- fotos dos serviços -->
+        <div class="row g-3 ct-detail-photos mb-4">
+          <div class="col-6">
+            <img src="imagens/serviço32.jpeg" alt="serviço3">
+          </div>
+          <div class="col-6">
+            <img src="imagens/serviço3.jpeg" alt="servoço32">
+          </div>
+        </div>
+
+        <h2 class="h4 fw-bold mb-3">Sobre o serviço</h2>
+        <p class="text-muted">A socialização ajuda o animal a desenvolver uma convivência mais tranquila com pessoas, outros animais e diferentes ambientes. O processo é realizado de maneira gradual, respeitandoos limites e as características de cada animal.</p>
+
+        <h2 class="h4 fw-bold mt-4 mb-3">Vídeo relacionado</h2>
+        <div class="ratio ratio-16x9 ratio-video">
+          <iframe src="https://www.youtube.com/embed/Mj9hvjVqM58" title="Como socializar cães REATIVOS na prática!" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h2 class="h5 fw-bold">Socialização Animal</h2>
+            <div class="ct-price my-2">R$ 200,00 <small>/ mês</small></div>
+
+            <table class="table ct-info-table mt-3">
+              <tbody>
+                <tr><th>Tempo estimado</th><td>2 meses</td></tr>
+                <tr><th>Dias de atendimento</th><td>Segunda a sábado</td></tr>
+                <tr><th>Horários</th><td>8h às 19h</td></tr>
+              </tbody>
+            </table>
+
+            <button type="button" class="btn btn-ct-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalOrcamento">
+              <i class="bi bi-file-earmark-text me-1"></i> Orçamento
+            </button>
+            <a class="btn btn-ct-outline w-100 mt-2" target="_blank" rel="noopener"
+               href="https://wa.me/5549999112233?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20manuten%C3%A7%C3%A3o%20de%20computador">
+              <i class="bi bi-whatsapp me-1"></i> Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL ORÇAMENTO -->
+<div class="modal fade" id="modalOrcamento" tabindex="-1" aria-labelledby="modalOrcamentoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalOrcamentoLabel">Solicitar orçamento — Manutenção de Computadores</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Orçamento enviado! Em breve entraremos em contato.'); bootstrap.Modal.getInstance(document.getElementById('modalOrcamento')).hide(); this.reset();">
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Telefone</label>
+              <input type="tel" class="form-control" placeholder="(49) 90000-0000" required>
+            </div>
+            <div class="col-md-8">
+              <label class="form-label">Endereço</label>
+              <input type="text" class="form-control" placeholder="Rua, número, bairro">
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Cidade</label>
+              <input type="text" class="form-control" value="Curitiba">
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">UF</label>
+              <select class="form-select">
+                <option selected>SC</option>
+                <option>RS</option>
+                <option>PR</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Observações</label>
+              <textarea class="form-control" rows="3" placeholder="Conte sobre o comportamento do seu pet..."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-ct-outline" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-ct-primary">Enviar solicitação</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="ct-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6>Links rápidos</h6>
+        <p class="small mb-1"><a href="index.html#servicos">Serviços</a></p>
+        <p class="small mb-1"><a href="index.html#sobre">Sobre a empresa</a></p>
+        <p class="small mb-1"><a href="index.html#depoimentos">Depoimentos</a></p>
+        <p class="small mb-1"><a href="index.html#contato">Contato</a></p>
+      </div>
+      <div class="col-md-4">
+        <h6>Atendimento</h6>
+        <p class="small mb-1"><i class="bi bi-whatsapp me-2"></i>(49) 99911-2233</p>
+      </div>
+    </div>
+    <hr>
+    <div class="d-flex flex-column flex-md-row justify-content-between ct-dev">
+      <span>Desenvolvido por Vitor Augusto</span>
+    </div>
+  </div>
+</footer>
+
+<a class="ct-whats-float" target="_blank" rel="noopener"
+   href="https://wa.me/5549999112233?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20manuten%C3%A7%C3%A3o%20de%20computador"
+   aria-label="Conversar no WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
