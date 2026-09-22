@@ -38,14 +38,36 @@ a lógica deve ser escrita manualmente.
 Teste de Mesa
                           Pilha       Topo        Retorno
 1 InicializaPilha         [  ]        -1          Topo = -1
+
+
 2 Empilha(Pilha,10,Topo)  [10]         0          Topo = 0  
+
+
 3 Empilha(Pilha,20,Topo)  [10,20]      1          Topo = 1
+
+
 4 Empilha(Pilha,30,Topo)  [10,20,30]   2          Topo = 2
+
+
 5 Topo Pilha(Pilha,Topo)  [10,20,30]   2          retorna 30(altera nada)
+
+
 6 Desempilha(Pilha,&Topo) [10,20]      1          retorna 30  
+
+
 7 Empilha(Pilha,40,Topo)  [10,20,40]   2          Topo = 2   
+
+
 8 Desempilha(Pilha,&Topo) [10,20]      1          retorna 40
+
+
 9 Desempilha(Pilha,&Topo) [10]         0          retorna 20
+
+
 10 Desempilha(Pilha,&Topo)[]          -1          retorna 10
+
+
 11 PilhaVazia(Topo)       []          -1          retorna 1
+
+
 12 Desempilha(Pilha,&Topo)[]          -1          erro(pilha vazia)
