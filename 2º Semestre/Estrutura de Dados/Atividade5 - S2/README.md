@@ -25,4 +25,3 @@ TESTE DE MESA
 VALOR = 22
 F = 3
 Lista = [8, 50, 78, 9, 9, ...]
-
