@@ -1,0 +1,39 @@
+#perguntas {
+    width: auto;
+    margin: 40px auto;
+}
+
+#perguntas > .col-12 {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+#perguntas .form-label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#perguntas .btn {
+    margin-top: 10px;
+}
+
+.Valores {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.Valores th,
+.Valores td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.Valores th {
+    background-color: #000;
+    color: white;
+}
